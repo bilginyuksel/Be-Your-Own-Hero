@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ActivityInterests"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#3312"
+        android:layout_height="wrap_content"
+        android:text="What are your interests ?"
+        android:padding="30dp"
+        android:gravity="center"
+        android:textColor="#123"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:gravity="center">
+
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="Personality"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Relationship"
+
+            android:gravity="right"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:weightSum="2"
+        android:gravity="center">
+
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:text="Motivation"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Business/Winning"
+
+            android:gravity="right"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
