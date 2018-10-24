@@ -14,6 +14,7 @@ import java.util.UUID;
 public class Firebase {
 
     private DatabaseReference ref;
+    DatabaseReference refi = FirebaseDatabase.getInstance().getReference("User");
     public void setRef(DatabaseReference ref){
         ref = FirebaseDatabase.getInstance().getReference("Motivation");
         this.ref = ref;
@@ -49,5 +50,15 @@ public class Firebase {
         UUID id = UUID.randomUUID();
         getRef().child(id.toString()).child("Haters").setValue(given_str);
 
+    }
+
+    public void addUser(String name,String surname,String username,String password)
+    {
+        UUID id = UUID.randomUUID();
+        refi.child(id.toString()).child("Id").setValue(id.toString());
+        refi.child(id.toString()).child("Name").setValue(name);
+        refi.child(id.toString()).child("Surname").setValue(surname);
+        refi.child(id.toString()).child("Username").setValue(username);
+        refi.child(id.toString()).child("Password").setValue(password);
     }
 }

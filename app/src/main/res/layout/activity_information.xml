@@ -25,20 +25,30 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etName"
             android:hint="name"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etSurname"
             android:hint="surname"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etUsername"
             android:hint="username"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
             android:hint="password"
             android:password="true"/>
+        <Button
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Regıster"
+            android:id="@+id/btRegister"
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
