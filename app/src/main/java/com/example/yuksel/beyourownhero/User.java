@@ -3,6 +3,7 @@ package com.example.yuksel.beyourownhero;
 public class User {
     private String name,surname,username,password;
 
+    public User(){}
     public User(String name,String surname,String username,String password){
         this.name = name;
         this.surname = surname;

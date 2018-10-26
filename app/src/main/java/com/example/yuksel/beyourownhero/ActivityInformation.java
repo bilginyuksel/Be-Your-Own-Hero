@@ -20,16 +20,18 @@ public class ActivityInformation extends AppCompatActivity {
         final EditText etUsername = findViewById(R.id.etUsername);
         final EditText password = findViewById(R.id.etPassword);
         Button btRegister = findViewById(R.id.btRegister);
+        final Intent intent = new Intent(this,ActivityLogin.class);
 
         btRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                User newUser = new User(etName.getText().toString(),etSurname.getText().toString(),etUsername.getText().toString(),
+                 startActivity(intent);
+            /*    User newUser = new User(etName.getText().toString(),etSurname.getText().toString(),etUsername.getText().toString(),
                         password.getText().toString());
                 Firebase fire = new Firebase();
                 fire.addUser(newUser.getName(),newUser.getSurname(),newUser.getUsername(),newUser.getPassword());
 
-
+*/
             }
         });
 

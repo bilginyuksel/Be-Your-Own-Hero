@@ -37,12 +37,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttonLogin"
-            android:text="LOGIN"
-            android:layout_gravity="center"/>
+            android:background="@drawable/round_button"
+            android:text="LOGIN" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
             android:text="SIGN UP"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="hi"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hi"
+            android:background="@drawable/round_button"/>
     </LinearLayout>
 
 
