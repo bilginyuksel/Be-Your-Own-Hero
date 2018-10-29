@@ -15,8 +15,22 @@ public class ActivityLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ArrayList<User> arrayUser = new ArrayList<>();
+        final ArrayList<String> arrSt = new ArrayList<>();
+        arrSt.add("Personality");
+        arrSt.add("Relationship");
+        arrSt.add("Business/Winning");
+        arrSt.add("Motivation");
 
-        ListView lstView = (ListView)findViewById(R.id.listview1);
+        ArrayAdapter arrAdapt = new ArrayAdapter(this,android.R.layout.simple_list_item_multiple_choice,arrSt);
+
+
+
+        final ListView lstTry = (ListView)findViewById(R.id.lst1);
+
+        lstTry.setAdapter(arrAdapt);
+        lstTry.setChoiceMode(lstTry.CHOICE_MODE_MULTIPLE);
+
+      /*  ListView lstView = (ListView)findViewById(R.id.listview1);
         ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayUser);
         User user = new User("yuksel","bilgin","bilginyuksel","123456");
         User user1 = new User("hasancan","kazan","hck","221133");
@@ -25,7 +39,7 @@ public class ActivityLogin extends AppCompatActivity {
         arrayUser.add(user1);
         lstView.setAdapter(adapter);
 
-
+*/
 
     }
 }

@@ -1,64 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="#3311"
-    android:weightSum="2">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        />
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center">
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Username"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"/>
+    android:background="#6A5ACD"
+    android:weightSum="10">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_weight="13">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="13"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/motivation" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Be Your Own Hero!"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:fontFamily="cursive"
+            android:textSize="35dp" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/buttonLogin"
-            android:background="@drawable/round_button"
-            android:text="LOGIN" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_button"
-            android:text="SIGN UP"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round_button"
-            android:text="hi"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="hi"
-            android:background="@drawable/round_button"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:background="@drawable/radius_layout"
+        android:orientation="vertical"
+        android:weightSum="7"
+        android:layout_weight="1">
+        <EditText
+            android:layout_width="match_parent"
+            android:hint=" Kullanıcı Adı"
+            android:background="@drawable/radius_edittext"
+            android:padding="8dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:hint=" Şifre"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/radius_edittext"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:id="@+id/btnLogin"
+            android:background="@drawable/radius_button"
+            android:text="Giriş"/>
 
 
-</LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:clickable="true"
+            android:id="@+id/txtRegister"
+            android:textColor="#fff"
+            android:text="Hala kayıt olmadınız mı?"/>
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
