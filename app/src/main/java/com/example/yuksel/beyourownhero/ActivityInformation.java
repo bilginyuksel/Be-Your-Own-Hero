@@ -25,6 +25,8 @@ public class ActivityInformation extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //We have to use putExtra species from intent class for communication with activityinterests
+
 
       /* final EditText etName = findViewById(R.id.etName);
         final EditText etSurname = findViewById(R.id.etSurname);
