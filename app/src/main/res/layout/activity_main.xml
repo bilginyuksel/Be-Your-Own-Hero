@@ -59,6 +59,7 @@
             android:layout_weight="1"
             android:padding="8dp"
             android:id="@+id/etPassword"
+            android:password="true"
             android:background="@drawable/radius_edittext"
             android:layout_margin="10dp"
             android:layout_height="wrap_content" />
