@@ -16,6 +16,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 
+
 public class ActivityMain extends AppCompatActivity {
 
      FirebaseAuth mAuth;
@@ -41,10 +42,15 @@ public class ActivityMain extends AppCompatActivity {
             public void onClick(View v) {
                 String userName = etUsername.getText().toString();
                 String password = etPassword.getText().toString();
+                FirebaseDatabase db = new FirebaseDatabase();
+                System.out.println("DENEME : \n" );
+                db.getWords();
+
+
 
                //if it is necessary userName += "@yukselbilgin.com";
                 if(userName.isEmpty() || password.isEmpty()){
-                    Toast.makeText(ActivityMain.this,"Dont pass password and username...", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(ActivityMain.this,"Dont pass password and username...", Toast.LENGTH_LONG).show();
                 }
                 else{
 
