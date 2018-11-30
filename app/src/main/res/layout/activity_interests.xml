@@ -122,6 +122,7 @@
     android:layout_width="match_parent"
     android:background="@drawable/radius_layout"
     android:layout_margin="10dp"
+    android:layout_weight="1"
     android:layout_height="wrap_content">
 
     <ListView
@@ -129,11 +130,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/lst1"></ListView>
 </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:id="@+id/btnSubmit"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <Button
+           android:layout_width="match_parent"
+           android:layout_margin="10dp"
+           android:layout_height="match_parent"
+           android:text="Submit"
+           android:textSize="15dp"
+           android:id="@+id/btnSubmit"/>
+   </LinearLayout>
 
 </LinearLayout>
