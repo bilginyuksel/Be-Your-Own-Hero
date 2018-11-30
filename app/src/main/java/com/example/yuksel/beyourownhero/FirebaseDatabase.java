@@ -4,16 +4,13 @@ import android.support.annotation.NonNull;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.HashMap;
-
 
 public class FirebaseDatabase extends Firebase {
-    private Word words;
+    static Word words;
+    static ArrayList<Word> arrWords = new ArrayList<>();
 
 
     @Override
@@ -30,7 +27,10 @@ public class FirebaseDatabase extends Firebase {
            @Override
            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                words = dataSnapshot.getChildren().iterator().next().getValue(Word.class);
+               arrWords.add(dataSnapshot.getChildren().iterator().next().getValue(Word.class));
                //it could expand with arrayList or use query orderbychild..
+               //use alertdialog for load array.... or something else
+               //you need the word of day if you cant load it dont touch it
                System.out.println(words);
            }
 

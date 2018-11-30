@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 
@@ -29,6 +30,22 @@ public class ActivityInterests extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interests);
         mAuth = FirebaseAuth.getInstance();
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner spnGender = (Spinner) findViewById(R.id.spnGender);
+        Spinner spnEducation = (Spinner) findViewById(R.id.spnEducation);
+
+        ArrayAdapter<CharSequence> adapterEducation = ArrayAdapter.createFromResource(this,
+                R.array.education,android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.planets_array, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.gender,
+                android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterEducation.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spnEducation.setAdapter(adapterEducation);
+        spnGender.setAdapter(adapter1);
         final ArrayList<String> arrSt = new ArrayList<>();
         arrSt.add("Personality");
         arrSt.add("Relationship");

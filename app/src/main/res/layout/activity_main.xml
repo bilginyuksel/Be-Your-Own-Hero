@@ -46,7 +46,7 @@
         android:layout_weight="1">
         <EditText
             android:layout_width="match_parent"
-            android:hint=" Kullanıcı Adı"
+            android:hint=" Username"
             android:background="@drawable/radius_edittext"
             android:padding="8dp"
             android:layout_margin="10dp"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content" />
         <EditText
             android:layout_width="match_parent"
-            android:hint=" Şifre"
+            android:hint=" Password"
             android:layout_weight="1"
             android:padding="8dp"
             android:id="@+id/etPassword"
@@ -71,7 +71,7 @@
             android:textColor="#fff"
             android:id="@+id/btnLogin"
             android:background="@drawable/radius_button"
-            android:text="Giriş"/>
+            android:text="Log in"/>
 
 
 
@@ -92,7 +92,7 @@
             android:clickable="true"
             android:id="@+id/txtRegister"
             android:textColor="#fff"
-            android:text="Hala kayıt olmadınız mı?"/>
+            android:text="Still not a member :O ?"/>
 
     </LinearLayout>
 

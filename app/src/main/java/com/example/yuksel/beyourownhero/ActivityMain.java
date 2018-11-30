@@ -25,10 +25,14 @@ public class ActivityMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final Intent intent = new Intent(this,ActivityInformation.class);
+        FirebaseDatabase db = new FirebaseDatabase();
+        db.getWords();
         /**/
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText)findViewById(R.id.etPassword);
+        final Intent intent1 = new Intent(this,ActivityLogin.class);
+
         mAuth = FirebaseAuth.getInstance();
         TextView txtReg = (TextView) findViewById(R.id.txtRegister);
         txtReg.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +50,7 @@ public class ActivityMain extends AppCompatActivity {
                 System.out.println("DENEME : \n" );
                 db.getWords();
 
+                startActivity(intent1);
 
 
                //if it is necessary userName += "@yukselbilgin.com";

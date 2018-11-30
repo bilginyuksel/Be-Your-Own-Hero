@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "379870922201-5e83jer62r0m0jb22jm2feqthbijlscs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yuksel.beyourownhero",
+            "certificate_hash": "af5d060758b6d4e3f6947ae35ccccca2ac9b9ad3"
+          }
+        },
+        {
           "client_id": "379870922201-ai3ma0eqajoh8n4ukrjcifspcie5cclj.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379870922201-ai3ma0eqajoh8n4ukrjcifspcie5cclj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

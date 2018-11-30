@@ -3,48 +3,137 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
     android:background="#6A5ACD"
-    android:weightSum="1"
     tools:context=".ActivityInterests"
+    android:padding="10dp"
     android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Be Your Own Hero!"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:fontFamily="cursive"
+        android:textSize="40dp" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_gravity="top"
-        android:gravity="top"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content">
-       <TextView
-           android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_layout"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="15dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+       <LinearLayout
+           android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Be Your Own Hero"
-           android:textColor="#fff"
-           android:gravity="center"
-           android:fontFamily="cursive"
-           android:textSize="30dp"/>
+           android:paddingLeft="40dp"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text = "Gender:"
+               android:textSize="15dp"
+               android:padding="20dp"/>
+           <Spinner
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/spnGender">
+
+           </Spinner>
+       </LinearLayout>
 
     </LinearLayout>
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:orientation="vertical"
-       android:padding="20dp"
-       android:background="@drawable/radius_layout"
-       android:layout_height="wrap_content">
-
-       <ListView
+    <LinearLayout
         android:layout_width="match_parent"
-           android:id="@+id/lst1"
-           android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/radius_layout"
+        android:orientation="horizontal">
 
-</ListView>
-<Button
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:text="Which Planet Are you From?"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:text="Education"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnEducation"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/radius_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life Quality "
+            android:textSize="15dp"
+            android:padding="20dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="%"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Submit"
-    android:id="@+id/btnSubmit"/>
+    android:background="@drawable/radius_layout"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
 
-
-   </LinearLayout>
-
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lst1"></ListView>
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnSubmit"/>
 
 </LinearLayout>
