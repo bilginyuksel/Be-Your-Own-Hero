@@ -52,12 +52,14 @@
             android:layout_width="60dp"
             android:layout_height="65dp"
             android:layout_margin="10dp"
+            android:id="@+id/btnAlarm"
             android:background="@drawable/alarm_clock" />
 
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="65dp"
             android:layout_margin="10dp"
+            android:id="@+id/btnProfile"
             android:background="@drawable/girl" />
 
         <ImageButton

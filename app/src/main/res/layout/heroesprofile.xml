@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/radius_layout_byoh"
+    tools:context=".ActivityInterests"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="50dp"
+        android:text="Who Am I..."
+        android:textColor="#ffff"
+        android:gravity="center"
+        android:fontFamily="cursive"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/radius_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are a hero named Yasin.Your Age is :28.You came to this world from planet Venus.
+Your life quality is a bit low but you are trying to improve it.You are your own HERO!"
+            android:layout_margin="20dp"
+            android:textColor="#ffffff"
+            android:fontFamily="cursive"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
