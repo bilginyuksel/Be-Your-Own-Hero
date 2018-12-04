@@ -74,13 +74,13 @@
         android:layout_margin="20dp"
         android:orientation="vertical"
         android:background="@drawable/radius_layout">
-       <ListView
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:padding="10dp"
-           android:id="@+id/lstview">
+     <ListView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/lstView"
+         android:padding="10dp">
 
-       </ListView>
+     </ListView>
 
     </LinearLayout>
 

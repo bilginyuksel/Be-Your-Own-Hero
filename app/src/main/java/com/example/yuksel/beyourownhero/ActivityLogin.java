@@ -15,24 +15,37 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class ActivityLogin extends AppCompatActivity {
 
     static ArrayList<Word> arrWords = new ArrayList<>();
     TextView txtCat,txtWord;
+    ArrayList<DataModel> dataModels;
+    ListView listView;
+    private static CustomAdapter adapter;
 
     public void __init__(){
-        txtCat = (TextView)findViewById(R.id.txtCategory);
-        txtWord = (TextView)findViewById(R.id.txtMotivationWord);
+        listView = (ListView)findViewById(R.id.lstView);
+        dataModels = new ArrayList<>();
+        dataModels.add(0,new DataModel("Kruskal Odevi","18/12/2018"));
+        dataModels.add(1,new DataModel("1 hafta sonra sistem","12/12/2018"));
+        dataModels.add(2,new DataModel("Veritabanı","21/12/2018"));
+
+
+        adapter = new CustomAdapter(dataModels,getApplicationContext());
+        listView.setAdapter(adapter);
+
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        //__init__();
+        __init__();
 
         FirebaseDatabase db = new FirebaseDatabase();
        /* Word d = new Word(db.uuid(),"Dont Sleep Wake up and Do something","Motivation");
@@ -55,11 +68,8 @@ public class ActivityLogin extends AppCompatActivity {
 
 
 
-        final ArrayList<String> arrSt = new ArrayList<>();
-        arrSt.add("toplantı");
-        ArrayAdapter arrAdapt = new ArrayAdapter(this,android.R.layout.select_dialog_multichoice,arrSt);
-        final ListView lstTry = (ListView)findViewById(R.id.lstview);
-        lstTry.setAdapter(arrAdapt);
+
+
 
 
 
@@ -86,6 +96,13 @@ public class ActivityLogin extends AppCompatActivity {
             }
         });
     }
+
+
+
+
+
+
+
     //ALERT FUNCTIONS
     public void showWordOfTheDay(){
         Dialog dialog = new Dialog(this);
