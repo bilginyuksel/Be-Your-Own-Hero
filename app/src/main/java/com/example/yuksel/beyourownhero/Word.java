@@ -1,11 +1,12 @@
 package com.example.yuksel.beyourownhero;
 
 public class Word {
-    private String motivationWord,category,id;
+    private String motivationWord,category,id,author;
     // store image ???
 
-    public Word(String id,String motivationWord,String category){
+    public Word(String id,String motivationWord,String category,String author){
         this.id = id;
+        this.author = author;
         this.motivationWord = motivationWord;
         this.category = category;
     }
@@ -24,6 +25,14 @@ public class Word {
 
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
     public String getId() {
         return id;
     }
@@ -35,5 +44,6 @@ public class Word {
     public void setMotivationWord(String motivationWord) {
         this.motivationWord = motivationWord;
     }
-    public String toString(){ return getCategory() + "\n" + getMotivationWord(); }
+    public String toString(){ return getMotivationWord() + "\n                                "+ getAuthor(); }
+
 }

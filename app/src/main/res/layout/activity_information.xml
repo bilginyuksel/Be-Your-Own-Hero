@@ -43,26 +43,36 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:padding="5dp"
+            android:singleLine="true"
+            android:inputType="text"
             android:hint="Name"
+            android:id="@+id/etInfoName"
             android:background="@drawable/radius_edittext"/>
         <EditText
             android:layout_width="match_parent"
             android:hint="Surname"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:id="@+id/etInfoSurname"
+            android:singleLine="true"
+            android:inputType="text"
             android:padding="5dp"
             android:background="@drawable/radius_edittext"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:singleLine="true"
             android:hint="Mail"
+            android:id="@+id/etInfoMail"
             android:layout_margin="10dp"
             android:background="@drawable/radius_edittext"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:id="@+id/etInfoUsername"
+            android:singleLine="true"
             android:padding="5dp"
             android:hint="Username"
             android:background="@drawable/radius_edittext"/>
@@ -70,6 +80,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:singleLine="true"
+            android:id="@+id/etInfoPassword"
+            android:password="true"
             android:padding="5dp"
             android:hint="Password"
             android:background="@drawable/radius_edittext"/>

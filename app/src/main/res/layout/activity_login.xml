@@ -30,8 +30,9 @@
         android:layout_height="wrap_content"
         android:padding="25dp"
         android:layout_marginTop="20dp"
+        android:id="@+id/btnFeelings"
         android:background="@drawable/radius_button_gray"
-        android:text="How are you feeling today ? "/>
+        android:text="My Favourite Words"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -53,20 +54,21 @@
             android:layout_height="65dp"
             android:layout_margin="10dp"
             android:id="@+id/btnAlarm"
-            android:background="@drawable/alarm_clock" />
+            android:background="@drawable/hourglass" />
 
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="65dp"
             android:layout_margin="10dp"
             android:id="@+id/btnProfile"
-            android:background="@drawable/girl" />
+            android:background="@drawable/unicorn" />
 
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="10dp"
-            android:background="@drawable/reminder" />
+            android:id="@+id/btnNotebook"
+            android:background="@drawable/address_book" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"

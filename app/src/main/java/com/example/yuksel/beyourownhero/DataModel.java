@@ -1,6 +1,5 @@
 package com.example.yuksel.beyourownhero;
 
-import java.util.Date;
 
 public class DataModel
 {

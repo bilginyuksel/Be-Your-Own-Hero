@@ -46,11 +46,12 @@
         android:layout_weight="1">
         <EditText
             android:layout_width="match_parent"
-            android:hint=" Username"
+            android:hint=" Mail"
             android:background="@drawable/radius_edittext"
             android:padding="8dp"
             android:layout_margin="10dp"
             android:id="@+id/etUsername"
+            android:singleLine="true"
             android:layout_weight="1"
             android:layout_height="wrap_content" />
         <EditText
@@ -58,6 +59,7 @@
             android:hint=" Password"
             android:layout_weight="1"
             android:padding="8dp"
+            android:singleLine="true"
             android:id="@+id/etPassword"
             android:password="true"
             android:background="@drawable/radius_edittext"

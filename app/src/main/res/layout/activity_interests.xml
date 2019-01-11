@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="#6A5ACD"
     tools:context=".ActivityInterests"
     android:padding="10dp"
     android:orientation="vertical">
@@ -37,6 +37,9 @@
         android:textSize="15dp"/>
         <EditText
             android:layout_width="wrap_content"
+            android:inputType="number"
+            android:id="@+id/etAge"
+            android:singleLine="true"
             android:layout_height="wrap_content" />
        <LinearLayout
            android:layout_width="wrap_content"
@@ -115,6 +118,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="%"
+            android:id="@+id/etLifeQuality"
+            android:inputType="number"
+            android:singleLine="true"
             android:textSize="15dp"/>
     </LinearLayout>
 

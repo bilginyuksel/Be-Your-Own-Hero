@@ -6,19 +6,28 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Reminder {
-    private String header , text ;
-    private Date remindDate;
-    private DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 
-    public Reminder(String header,String text,Date remindDate){
+    private String header , text ;
+    private String remindDate,remindTime;
+
+    public Reminder(String header,String text,String remindDate,String remindTime){
         this.header = header;
         this.text = text ;
+        this.remindTime = remindTime;
         this.remindDate = remindDate;
     }
     public Reminder(){}
 
     public String getHeader() {
         return header;
+    }
+
+    public String getRemindTime() {
+        return remindTime;
+    }
+
+    public void setRemindTime(String remindTime) {
+        this.remindTime = remindTime;
     }
 
     public void setHeader(String header) {
@@ -33,20 +42,16 @@ public class Reminder {
         this.text = text;
     }
 
-    public Date getRemindDate() {
+    public String getRemindDate() {
         return remindDate;
     }
 
-    public void setRemindDate(Date remindDate) {
+    public void setRemindDate(String remindDate) {
         this.remindDate = remindDate;
     }
 
-    public String dateToStr(Date remindDate){
-        String remdate = format.format(remindDate);
-        return remdate;
+    public String toString(){
+        return "HELLO IM REMINDER CLASs AND I HAVE SOMETHGIN--" + getHeader() +"\n" + getText() + "\n" + getRemindDate();
     }
-    public Date strToDate(String remindDate) throws ParseException {
-        Date newDate = format.parse(remindDate);
-        return newDate;
-    }
+
 }
