@@ -27,7 +27,7 @@ Hello, this is the login page. If you are a user, you can login easily with your
  This screen is your library of your favourite words. <br><br>
  <img src = "https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/library.jpeg" width=350/>
  
- # Alert Dialogs Other Screens
+ # Alert Dialogs and Other Screens
  
  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/alarm.jpg" width=350 />  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/reminder.jpeg" width=350 />  
  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/wordofday.jpeg" width=350 />  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/whoami.jpeg" width=350 />  
