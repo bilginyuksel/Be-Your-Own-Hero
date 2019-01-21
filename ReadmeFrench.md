@@ -25,7 +25,7 @@ Bonjour! Ceci est la page de connexion, si vous est un utilisateur ou une utilis
  Il y a une bibliothèque qui préserve toutes vos paroles préférées. <br><br>
  <img src = "https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/library.jpeg" width=350/>
  
- # La dialogue et d'autres écrans
+ # Le dialogue et d'autres écrans
  
  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/alarm.jpg" width=350 />  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/reminder.jpeg" width=350 />  
  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/wordofday.jpeg" width=350 />  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/whoami.jpeg" width=350 />  
