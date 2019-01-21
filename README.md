@@ -1,9 +1,9 @@
 # Be Your Own Hero
 
-First of all, this application is built for unconfident, unsuccesfull etc. people. These people have to believe in themselves, because if people believe in themselves, they can do anything they want. In our world, we need confident, succesfull people to work and to communicate with. So to solve this problem, I created this application.
+First of all, this application is built for people who need motivation and encouragement. People have to believe in themselves, because if people believe in themselves, they can do anything they want. In our world, we need confident, succesfull people to work and to communicate with. So to solve this problem, I created this application.
 
-# How is it working ? 
-This program uses firebase realtime database servers and sqLite local database. In the firebase server, we store user information, user authentication, words and notification services. Local database stores your favourite words and your timeline. We have two receivers: alarmreceiver (for reminder and alarm) and notificationreceiver. The application can send notifications or scheduled notifications (for example you can choose to schedule the notification everyday at 11 am or just on a specific day of the week) from the firebase. If you are interested, you can examine the code.
+# How does it work ? 
+This program uses Firebase Realtime database servers and sqLite local database. In the Firebase server, we store user information, user authentication, words and notification services. Local database stores your favourite words and your timeline. We have two receivers: alarm receiver (for reminder and alarm) and notification receiver. The application can send instant notifications or scheduled notifications (for example you can choose to schedule the notification everyday at 11 am or just on a specific day of the week) from Firebase. If you are interested, you can examine the code.
 
 
 # Application Screens and Usage
@@ -16,7 +16,7 @@ Hello, this is the login page. If you are a user, you can login easily with your
  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/firstreg.jpeg" width=350 />  
  
  # 3. Second Register Screen
- On this screen, you have too fill the blanks again, then hit the button __Submit__ to be our new member. When you hit the button __Submit__ we will create a profile for you at Firebase Realtime database. <br><br>
+ On this screen, you have too fill the blanks again, then hit the button __Submit__ to be our new member. When you hit the button __Submit__ we will create a profile for you in Firebase Realtime database. <br><br>
  <img src="https://github.com/bilginyuksel/Be-Your-Own-Hero/blob/master/photos/secondreg.jpeg" width=350 />  
  
  # 4. Main Screen
